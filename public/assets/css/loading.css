@@ -1,0 +1,144 @@
+@charset "utf-8";
+.loading-awal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  overflow-x: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(8px);
+}
+
+.loading {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: none;
+}
+
+.loading-utama {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.loading-2 {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.loading-bulat {
+  width: 40px;
+  height: 40px;
+  border: 8px solid #ddd;
+  border-top: 8px solid var(--green);
+  border-radius: 100%;
+  animation: loader 0.5s infinite linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes loader {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.c-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-2 .saving {
+  color: var(--green);
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  /**
+
+     * At the start of the animation the dot
+
+     * has an opacity of .2
+
+     */
+
+  0% {
+    opacity: 0.2;
+  }
+
+  /**
+
+     * At 20% the dot is fully visible and
+
+     * then fades out slowly
+
+     */
+
+  20% {
+    opacity: 1;
+  }
+
+  /**
+
+     * Until it reaches an opacity of .2 and
+
+     * the animation can start again
+
+     */
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.saving {
+  display: block;
+
+  height: 3em;
+
+  width: 100%;
+
+  text-align: center;
+
+  top: 50%;
+
+  font-size: 14px;
+
+  color: rgb(87, 87, 87);
+}
+
+.jml_qr {
+  color: var(--yelloww);
+}
